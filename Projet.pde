@@ -79,6 +79,8 @@ ArrayList polynome(int N) {
   
 }
 
+// Fonction nous permettant de savoir si le nombre est premier
+
 boolean isPrime(int number) {
   if (number <= 1) {
      return false;
