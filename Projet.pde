@@ -1,20 +1,19 @@
 import peasy.*; // Pour la caméra dans l'espace
 
+// Instanciation de la cam
 PeasyCam cam;
+
+// Instanciation du cube
+PShape square;
 
 void setup() {
   size(1024, 768, P3D);
   
-  // Test de la fonction polynome 
+  square = createShape(RECT, 0, 0, 80, 80);
   
-  ArrayList test = polynome(20);
-  for (int i = 0; i < 20; i++) { 
-    System.out.println(test.get(i));
-  }
-  
-  // cam = new PeasyCam(this, 100);
-  // cam.setMinimumDistance(50);
-  // cam.setMaximumDistance(500);
+  cam = new PeasyCam(this, 100);
+  cam.setMinimumDistance(50);
+  cam.setMaximumDistance(500);
   
   
   
@@ -25,6 +24,9 @@ void setup() {
 }
 
 void draw() {
+  
+  shape(square, 10, 10);
+  
 }
 
 int sd(int number) {
@@ -91,3 +93,5 @@ boolean isPrime(int number) {
     return true;
    
 }
+
+// Fonction permettant
