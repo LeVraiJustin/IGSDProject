@@ -3,20 +3,15 @@ import peasy.*; // Pour la caméra dans l'espace
 // Instanciation de la cam
 PeasyCam cam;
 
-// Instanciation du cube
-PShape square;
-
 void setup() {
   size(1024, 768, P3D);
   
-  square = createShape(RECT, 0, 0, 80, 80);
+  cube = createShape(RECT, 0, 0, 80, 80);
   
   cam = new PeasyCam(this, 100);
   cam.setMinimumDistance(50);
   cam.setMaximumDistance(500);
-  
-  
-  
+
   background(0);
   noStroke();
   smooth();
@@ -25,7 +20,10 @@ void setup() {
 
 void draw() {
   
-  shape(square, 10, 10);
+  
+  shape(cube, 10, 10);
+  
+
   
 }
 
@@ -93,5 +91,3 @@ boolean isPrime(int number) {
     return true;
    
 }
-
-// Fonction permettant
