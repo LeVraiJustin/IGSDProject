@@ -9,22 +9,56 @@ void setup() {
   cube = createShape(RECT, 0, 0, 80, 80);
   
   cam = new PeasyCam(this, 100);
-  cam.setMinimumDistance(50);
-  cam.setMaximumDistance(500);
+  cam.setMinimumDistance(1000);
+  cam.setMaximumDistance(1000);
 
   background(0);
   noStroke();
   smooth();
   
+  fill(255);
+  rect(10, 10, 20, 80);
+  fill(175);
+  rect(40, 10, 20, 80);
+  fill(100);
+  rect(70, 10, 20, 80);
+  
 }
 
 void draw() {
   
+  if (mouseX > 10 && mouseX < 30 && mouseY > 10 && mouseY < 90) {
+      cursor(HAND); // Affiche une main
+   }
+   else
+   if (mouseX > 40 && mouseX < 60 && mouseY > 10 && mouseY < 90) {
+      cursor(ARROW); // Affiche une flèche
+   }
+   else
+   if (mouseX > 70 && mouseX < 90 && mouseY > 10 && mouseY < 90) {
+      cursor(WAIT); // Affiche un sablier
+  }
+  else {
+     cursor(CROSS); // Affiche une croix si on ne survole rien
+  }
   
-  shape(cube, 10, 10);
+  pushMatrix();
+  figure();
+  popMatrix();
   
+  translate(500, 500);
+  
+  pushMatrix();
+  figure();
+  popMatrix();
 
   
+}
+
+void mousePressed() {
+  
+  
+
 }
 
 int sd(int number) {
