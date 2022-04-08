@@ -1,5 +1,5 @@
 // On met la pyramide à l'intérieur d'une fonction
-// Comme ca on a juste à faire 2 appels de la fonction pour avoir 2 fonctions
+// Comme ca on a juste à faire 2 appels de la fonction pour avoir 2 figures
 
 void figure() {
   
