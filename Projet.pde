@@ -33,12 +33,14 @@ void draw() {
   
   figure(polynome1);
   
+  for (int i = 0; i < n; i++) { System.out.println(polynome1[i]); }
   
   
+  /*
   for (int i = 0; i < n; i++) {
     System.out.println("First : "+polynome1[i]+" Second : "+polynome2[i]);
   }
-  
+  */
 }
 
 
