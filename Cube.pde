@@ -16,14 +16,15 @@ PShape cube(int number) {
   
   cube.beginShape(QUAD);
   
-  if (isPrime(number)) fill(0, 0, 255);
-      
-  if (deficient(number)) fill(255, 0, 0);
-      
-  if (parfait(number)) fill(0, 255, 0);
-       
-  if (abondant(number)) fill(153, 0, 0);
-
+  if (isPrime(number)) { 
+    fill(0, 0, 255); 
+  } else if (deficient(number)) {
+    fill(255, 0, 0);
+  } else if (parfait(number)) {
+    fill(0, 255, 0);
+  } else {
+    fill(153, 0, 0);
+  }
   
   cube.vertex(p1.x, p1.y, p1.z);
   cube.vertex(p2.x, p2.y, p2.z);
