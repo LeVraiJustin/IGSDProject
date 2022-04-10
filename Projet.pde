@@ -4,7 +4,7 @@ import peasy.org.apache.commons.math.geometry.*;
 
 PeasyCam cam;
 
-int n = 2; // Nombre d'éléments dans polynome
+int n = 50; // Nombre d'éléments dans polynome
 int coeffA1 = 1, coeffB1 = 1, conste1 = 1;
 int coeffA2 = 1, coeffB2 = 1, conste2 = 1;
 ArrayList polynome1 = new ArrayList();
