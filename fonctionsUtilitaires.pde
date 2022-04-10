@@ -55,13 +55,18 @@ boolean isPrime(int number) {
    
 }
 
-void affichePolynome() {
+void affichePolynome(int coeffA, int coeffB, int conste, boolean pos) {
   // Couleur du text
   fill(color(0));
   // Taille du text
-  textSize(80);
+  textSize(20);
   // Emplacement du texte
-  textAlign(CENTER, BOTTOM);
+  if (pos) {
+    textAlign(RIGHT, TOP);
+  } else {
+    textAlign(LEFT, TOP);
+  }
   // Texte à afficher
   text(str(coeffA)+"x² + "+str(coeffB)+"x + "+str(conste), 0, 0);
 }
+
