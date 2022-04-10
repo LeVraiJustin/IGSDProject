@@ -57,7 +57,7 @@ boolean isPrime(int number) {
 
 void affichePolynome(int coeffA, int coeffB, int conste, boolean pos) {
   // Couleur du text
-  fill(color(0));
+  //fill(color(0));
   // Taille du text
   textSize(20);
   // Emplacement du texte
